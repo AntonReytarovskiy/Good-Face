@@ -1,0 +1,315 @@
+#messages {
+    position: absolute;
+    height: 650px;
+    width: 81%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#messages #dialogs {
+    width: 250px;
+    height: 100%;
+    background-color: #292929;
+    float: left;
+}
+
+#messages #dialogs #head #lable {
+    font-family: 'Neucha', cursive;
+    color: #292929;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#messages #head #new-dialog {
+    -webkit-user-select: none;
+    /* user-select -- это нестандартное свойство */
+
+    -moz-user-select: none;
+    /* поэтому нужны префиксы */
+
+    -ms-user-select: none;
+}
+
+#messages #head #new-dialog img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+#messages #head #new-dialog p {
+    padding-right: 25px;
+    font-family: 'Neucha', cursive;
+    text-align: center;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    padding-bottom: 10px;
+}
+
+#messages #head #new-dialog p:hover {
+    color: white;
+}
+
+#messages #dialogs #body .dialog {
+    width: 95%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#messages #dialogs #body .dialog:hover {
+    color: white;
+    background-color: black;
+}
+
+#messages #dialogs .dialog #user-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-top: 2.5px;
+    float: left;
+}
+
+#messages #dialogs #body .selected-dialog {
+    background-color: darkorange;
+    color: black;
+}
+
+#messages #dialogs .dialog #user-name {
+    font-family: 'Neucha', cursive;
+    text-align: center;
+    padding-top: 6px;
+    margin-left: 10px;
+    width: 50%;
+    float: left;
+}
+
+#messages #dialogs .dialog #menu {
+    font-size: 25pt;
+    float: right;
+    margin-right: 20px;
+    margin-top: 0px;
+    line-height: 20px;
+    color: darkred;
+    height: 90%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#messages #dialogs #body {
+    height: 85%;
+    overflow: auto;
+}
+
+#messages #dialog-messages #body {
+    margin-top: 20px;
+}
+
+#messages #dialogs #body::-webkit-scrollbar { width: 0; }
+
+#messages #dialogs #body { -ms-overflow-style: none; }
+
+#messages #dialogs #body { overflow: -moz-scrollbars-none; }
+
+#messages #dialog-messages {
+    width: 91%;
+    height: 99%;
+    margin-left: 270px;
+}
+
+#messages #dialog-messages #head #label {
+    font-family: 'Neucha', cursive;
+    text-align: center;
+    padding-bottom: 5px;
+    border-radius: 0px 0px 10px 10px;
+    width: 100px;
+    color: white;
+    margin: 0 auto;
+    background-color: #292929;
+}
+
+#messages #dialog-messages #body {
+    margin-top: -20px;
+    height: 80%;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+#messages #dialog-messages #body::-webkit-scrollbar { width: 0; }
+
+#messages #dialog-messages #body { -ms-overflow-style: none; }
+
+#messages #dialog-messages #body { overflow: -moz-scrollbars-none; }
+
+#messages #dialog-messages #body .message {
+    margin-top: 5px;
+}
+
+#messages #dialog-messages #body .message img{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    float: left;
+    cursor: pointer;
+}
+
+#messages #dialog-messages #body .message #name {
+    font-family: 'Neucha', cursive;
+    width: 40%;
+    color: darkorange;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+#messages #dialog-messages #body .message #message-text {
+    font-family: 'Neucha', cursive;
+    margin-left: 12%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#continer #show {
+    background-color: #292929;
+    color: white;
+}
+
+#logo {
+    display: none;
+}
+
+#messages #dialogs #head #add-box {
+    position: absolute;
+    width: 160px;
+    background-color: green;
+    font-family: 'Neucha', cursive;
+    border-radius: 5px;
+    margin-top: -20px;
+    margin-left: 35px;
+    display: none;
+}
+
+#messages #dialogs #head #add-box #login-lable {
+    padding-left: 8px;
+    color: white;
+}
+
+#messages #dialogs #head #add-box input {
+    font-family: 'Neucha', cursive;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: 7px;
+    border-radius: 5px;
+}
+
+#messages #dialogs #head #add-box #added:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+#error {
+    color: darkred;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+#messages #dialog-messages #editable {
+    /*margin-top: -100px;*/
+    margin-left: -5px;
+}
+
+#messages #dialog-messages #editable #message-editable  {
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 80px;
+    min-height: 80px;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+#messages #dialog-messages #editable #send {
+    cursor: pointer;
+    background-color: darkorange;
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 2px;
+    width: 100px;
+    height: 30px;
+    font-weight: 600;
+}
+
+#messages #dialogs #options {
+    width: 200px;
+    background-color: black;
+    position: absolute;
+    top: 100px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border: 2px solid white;
+    display: none;
+}
+
+#messages #dialogs #options p {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
+    margin-top: 3px;
+}
+
+#messages #dialogs #options p:hover {
+    background-color: #292929;
+    border-radius: 5px;
+}
+
+/*#messages #dialogs #options #delete-dialog {*/
+    /*border-radius: 7px 7px 0px 0px;*/
+/*}*/
+
+#messages #dialogs #options #clear-dialog {
+    margin-bottom: 3px;
+}
+
+#messages #dialog-messages .message .delete-message {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    position: absolute;
+    right: 0px;
+    margin-right: -180px;
+    background: url("../image/delete.png");
+    background-size: contain;
+    cursor: pointer;
+    display: none;
+}
+
+#messages #dialog-messages .select-message {
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+#messages #dialog-messages #editable #send-help {
+    float: right;
+    font-family: 'Neucha', cursive;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#messages #dialog-messages .message #date {
+    margin-left: 10%;
+    font-family: 'Neucha', cursive;
+    font-size: 10pt;
+    font-weight: 600;
+    color: #292929;
+    display: none;
+    width: 148px;
+    border-bottom: 1px solid slategray;
+}

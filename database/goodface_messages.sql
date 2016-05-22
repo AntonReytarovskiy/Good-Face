@@ -1,0 +1,58 @@
+-- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
+--
+-- Host: localhost    Database: goodface
+-- ------------------------------------------------------
+-- Server version	5.7.11-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `messages`
+--
+
+DROP TABLE IF EXISTS `messages`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `messages` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `login` varchar(30) NOT NULL,
+  `dialog_id` int(11) NOT NULL,
+  `message` text,
+  `send_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`ID`),
+  KEY `login` (`login`),
+  KEY `dialog_id` (`dialog_id`),
+  CONSTRAINT `messages_ibfk_1` FOREIGN KEY (`login`) REFERENCES `accounts` (`login`),
+  CONSTRAINT `messages_ibfk_2` FOREIGN KEY (`dialog_id`) REFERENCES `dialogs` (`ID`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `messages`
+--
+
+LOCK TABLES `messages` WRITE;
+/*!40000 ALTER TABLE `messages` DISABLE KEYS */;
+INSERT INTO `messages` VALUES (1,'antosha',2,'ХАЙ','2016-05-04 00:02:35'),(2,'dasha',2,'23123','2016-05-04 00:13:01'),(3,'antosha',2,'sdfsdfsd','2016-05-04 00:13:05'),(4,'antosha',2,'Здорова','2016-05-04 02:19:34'),(5,'antosha',3,'ПИСЬКА','2016-05-04 02:20:01'),(6,'antosha',4,'ЛАЛАЛА\n','2016-05-04 02:20:18'),(7,'antosha',3,'sfsdfsdf','2016-05-04 02:41:00'),(8,'antosha',2,'sdfsdfsdf','2016-05-05 03:11:21'),(9,'antosha',2,'sdfsdfsdf','2016-05-05 03:11:22'),(10,'antosha',2,'sdfsdfsdf','2016-05-05 03:11:23'),(11,'antosha',2,'sdfsdfsdf','2016-05-05 03:11:24'),(12,'antosha',2,' ','2016-05-05 03:11:47'),(13,'antosha',2,'    ','2016-05-05 03:11:49'),(14,'antosha',2,'   ','2016-05-05 03:11:51'),(15,'antosha',2,'     ','2016-05-05 03:11:53'),(16,'antosha',2,'                   ','2016-05-05 03:11:56');
+/*!40000 ALTER TABLE `messages` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2016-05-22 16:37:53

@@ -1,0 +1,28 @@
+#welcome {
+    margin-top: 100px;
+}
+
+#welcome p {
+    text-align: center;
+    font-size: 25pt;
+    font-family: 'Neucha', cursive;
+}
+
+#welcome #good-face {
+    color: green;
+}
+
+#welcome form input {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #292929;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    height: 20px;
+    cursor: pointer;
+}
+
+#welcome form input:hover {
+    background-color: black;
+}

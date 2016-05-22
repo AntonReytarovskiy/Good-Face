@@ -1,0 +1,182 @@
+#account-notfound {
+    position: absolute;
+    text-align: center;
+    font-size: 50pt;
+    margin-top: 150px;
+    width: 100%;
+    color: #ff9000;
+    margin-left: 70px;
+    text-shadow: black 1px 0px,  black 1px 1px,  black 0px 1px,
+                            black -1px 1px,  black -1px 0px,
+                            black -1px -1px,  black 0px -1px,
+                            black 1px -1px;
+    font-family: 'Neucha', cursive;
+}
+
+p {
+    font-family: 'Neucha', cursive;
+}
+
+#account-notfound img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    margin-left: -100px;
+    margin-top: 15px;
+}
+
+#profile {
+    width: 100%;
+    height: 100%;
+}
+
+#profile #profile-avatar {
+    width: 400px;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+#profile #profile-avatar img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#profile #info {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+#profile #info p {
+    font-size: 18pt;
+}
+
+#continer #logo {
+    display: none;
+}
+
+#continer #show {
+    background-color: #292929;
+    color: white;
+}
+
+#profile #photos {
+    border: 2px solid #292929;
+    height: 20%;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border-radius: 0px 10px 0px 0px;
+}
+
+#profile #photos img {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+#profile #photos img:first-child {
+    margin-left: 45px;
+}
+
+#profile #photos #label {
+    position: absolute;
+    margin-top: -27px;
+    margin-left: -2px;
+    border-radius: 0px 5px 0px 0px;
+    background-color: darkorange;
+    border: 2px solid #292929;
+}
+
+#viewer {
+    top: 0px;
+}
+
+#profile #options {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    background-color: darkorange;
+    border: 2px solid black;
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#profile #options p {
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border: 1px solid transparent;
+}
+
+#profile #options p:hover {
+    border-bottom: 1px solid green;
+}
+
+#profile #options p:first-child{
+    margin-left: 50px;
+}
+
+#profile #options p:last-child {
+    margin-right: 15px;
+}
+
+#profile #options p img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: -35px;
+    margin-top: -4px;
+}
+
+#profile #message {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 70px;
+    right: 75px;
+    display: none;
+    z-index: 2;
+}
+
+#profile #message input,textarea {
+    width: 100%;
+    outline: none;
+    font-family: 'Neucha', cursive;
+}
+
+#profile #message textarea {
+    border-radius: 5px 5px 0px 0px;
+    min-height: 89%;
+    max-height: 89%;
+}
+
+#profile #message input {
+    border-radius: 0px 0px 5px 5px;
+    border: none;
+    height: 11%;
+    cursor: pointer;
+    background-color: #ff9000;
+    font-size: 11pt;
+}
+
+#profile #message input:hover {
+    background-color: #4ab1c4;
+}
+
+
+
+

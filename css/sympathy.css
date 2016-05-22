@@ -1,0 +1,104 @@
+#sympathy {
+    height: 100%;
+}
+
+#sympathy #nav {
+    background-color: black;
+    height: 50px;
+    margin-top: -0px;
+    border-radius: 0px 0px 10px 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#sympathy #nav p {
+    float: left;
+    margin-left: 50px;
+    color: darkorange;
+    font-family: 'Neucha', cursive;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#sympathy #nav .selected-nav {
+    padding: 2px;
+    background-color: teal;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#sympathy #nav p:hover {
+    color: #4ab1c4;
+}
+
+#sympathy #body {
+    height: 87.3%;
+    background-color: white;
+    border: 1px solid #4ab1c4;
+    border-radius: 5px 5px 0px 0px;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: scroll;
+}
+
+#sympathy #body .people {
+    background-color: #4ab1c4;
+    height: 70px;
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#sympathy #body .people img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#sympathy #body .people #name {
+    line-height: 70px;
+    margin-left: 75px;
+    font-family: 'Neucha', cursive;
+    cursor: pointer;
+    color: firebrick;
+    font-weight: bold;
+}
+
+#sympathy #body .people #date {
+    font-family: 'Neucha', cursive;
+    font-size: 10pt;
+    font-weight: 600;
+    float: right;
+    background-color: darkorange;
+    border-radius: 0px 5px 0px 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-top: -70px;
+}
+
+#sympathy #body .people #state {
+    float: right;
+    cursor: default;
+    margin-top: -52px;
+    margin-right: 200px;
+}
+
+#sympathy #body .people #state img {
+    width: 25px;
+    height: 25px;
+}
+
+#sympathy #body .people #state p {
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: 'Neucha', cursive;
+}

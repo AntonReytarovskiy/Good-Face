@@ -1,0 +1,63 @@
+#viewer {
+    position: absolute;
+    background-color: #292929;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    margin-top: 80px;
+    width: 650px;
+    height: 500px;
+    display: none;
+    opacity: 0.8;
+}
+
+#viewer #close {
+    position: absolute;
+    top: 0px;
+    width: 30px;
+    font-family: Arial;
+    background-color: #131313;
+    color: white;
+    opacity: 0.5;
+    font-size: 20pt;
+    border-radius: 0px 0px 5px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#viewer #close:hover {
+    background-color: black;
+    opacity: 1;
+}
+
+#viewer form {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: -30px;
+}
+
+#viewer #set-avatar, #viewer #delete {
+    background-color: black;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Neucha', cursive;
+}
+
+#viewer #set-avatar:hover, #viewer #delete:hover {
+    color: darkorange;
+}
+
+#viewer #set-avatar {
+    float: left;
+    width: 50%;
+    border-radius: 0px 5px 0px 0px;
+}
+
+#viewer #delete {
+    border-radius: 5px 0px 0px 0px;
+    width: 20%;
+    float: right;
+}
